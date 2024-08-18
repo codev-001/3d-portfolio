@@ -5,14 +5,17 @@ import Atom from "./Atom";
 import styled from "styled-components";
 
 const Desc = styled.div`
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 400px;
   padding: 20px;
-  background-color: white;
+  background-color:white;
   border-radius: 10px;
   position: absolute;
-  top: 200px;
+  top: 100px;
   right: 100px;
+  font-size:50px;
+  font-weight:40px;
+  
 
   @media only screen and (max-width: 768px) {
     top: 0;

@@ -8,6 +8,9 @@ const Section = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
+  @media only screen and (max-width: 468px) {
+    width: 100px;
+  }
 `;
 
 const Container = styled.div`
@@ -21,15 +24,21 @@ const Container = styled.div`
     width: 100%;
     padding: 10px;
   }
+  @media only screen and (max-width: 468px) {
+    padding: 10px;
+    position:absolute;
+  }
 `;
 
 const Links = styled.div`
   display: flex;
   align-items: center;
   gap: 50px;
+  @media only screen and (max-width: 468px) {
+    display: flex;
+    gap: 10px;
+  }
 `;
-
-
 
 const List = styled.ul`
   display: flex;
@@ -38,6 +47,11 @@ const List = styled.ul`
 
   @media only screen and (max-width: 768px) {
     display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    gap: 10px;
+    margin-right:29px;
   }
 `;
 

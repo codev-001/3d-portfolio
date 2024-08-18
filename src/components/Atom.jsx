@@ -19,7 +19,7 @@ const Shape = () => {
         worldUnits
         points={points}
         color="#cae6f1"
-        lineWidth={0.3}
+        lineWidth={0.4}
         rotation={[0, 0, 1]}
       />
       <Line

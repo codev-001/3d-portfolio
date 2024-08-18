@@ -6,7 +6,7 @@ import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const Section = styled.div`
   height: 100vh;
-  width:270vh;
+  width: 270vh;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,12 @@ const Section = styled.div`
 
   @media only screen and (max-width: 768px) {
     height: 200vh;
+    width: 70vh;
+  }
+  @media only screen and (max-width: 468px) {
+    height: 200vh;
+    width: 100vw;
+    font-size: 10px;
   }
 `;
 
@@ -51,6 +57,8 @@ const Title = styled.h1`
 
   @media only screen and (max-width: 768px) {
     text-align: center;
+    font-size: 40px;
+
   }
 `;
 
@@ -98,8 +106,8 @@ const Right = styled.div`
 `;
 
 const Img = styled.img`
-  width: 700px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   object-fit: contain;
   position: absolute;
   top: 0;
@@ -143,7 +151,7 @@ const Hero = () => {
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
               <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.4}>
+              <Sphere args={[1, 100, 200]} scale={3}>
                 <MeshDistortMaterial
                   color="#3d1c56"
                   attach="material"

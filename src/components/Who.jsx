@@ -6,7 +6,7 @@ import Cube from "./Cube";
 
 const Section = styled.div`
   height: 100vh;
-  width:230vh;
+  width: 230vh;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
@@ -18,6 +18,15 @@ const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+   
+  width: 400px;
+  }
+  @media only screen and (max-width: 768px) {
+   
+  width: 200px;
+  }
 `;
 
 const Left = styled.div`
@@ -34,6 +43,10 @@ const Title = styled.h1`
   @media only screen and (max-width: 768px) {
     font-size: 60px;
   }
+  @media only screen and (max-width: 468px) {
+    font-size: 30px;
+    width: 30vh;
+  }
 `;
 
 const Right = styled.div`
@@ -44,6 +57,11 @@ const Right = styled.div`
   gap: 20px;
 
   @media only screen and (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 468px) {
     align-items: center;
     text-align: center;
   }
@@ -65,8 +83,15 @@ const Subtitle = styled.h2`
 
 const Desc = styled.p`
   font-size: 24px;
-  width:90%;
+  width: 90%;
   color: lightgray;
+
+  @media only screen and (max-width: 468px) {
+    align-items: center;
+    text-align: center;
+    width: 30vh;
+    font-size: 20px;
+  }
 `;
 
 const Button = styled.button`
@@ -101,8 +126,7 @@ const Who = () => {
             <Subtitle>Coders</Subtitle>
           </WhatWeDo>
           <Desc>
-            a creative designer and developer with a passion for the
-            arts.
+            a creative designer and developer with a passion for the arts.
           </Desc>
           <Button>See our works</Button>
         </Right>

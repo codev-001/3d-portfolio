@@ -8,11 +8,13 @@ const Desc = styled.div`
   width: 300px;
   height: 200px;
   padding: 20px;
-  background-color: white;
+  background-color: blue;
   border-radius: 10px;
   position: absolute;
   top: 200px;
+  color: white;
   right: 170px;
+  display:none;
 
   @media only screen and (max-width: 768px) {
     top: 0;
